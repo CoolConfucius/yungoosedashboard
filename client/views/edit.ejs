@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Edit Mongoose</title>
+  <title>Edit Yungoose</title>
   <style>
     form label, form input {
       display: block;
@@ -10,16 +10,16 @@
   </style>
 </head>
 <body>
-  <h1>Edit Mongoose</h1>
+  <h1>Edit Yungoose</h1>
 
   <div class="container">
-    <form action="/mongooses/<%= mongoose._id %>" method="post">
+    <form action="/yungooses/<%= yungoose._id %>" method="post">
       
       <label>
-        Name: <input type="text" name="name" value="<%= mongoose.name %>">
+        Name: <input type="text" name="name" value="<%= yungoose.name %>">
       </label>
       <label>
-        Age: <input type="number" name="age" value="<%= mongoose.age %>">
+        Age: <input type="number" name="age" value="<%= yungoose.age %>">
       </label>
       
       <input type="submit" value="Submit">

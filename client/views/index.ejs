@@ -27,15 +27,15 @@
 
     <%= /*users*/ %> 
   -->
-    <!-- <form action="/mongooses/new" method="get">
+    <!-- <form action="/yungooses/new" method="get">
       <input type="submit" value="New">
     </form> -->
-    <a href="/mongooses/new">new</a>
+    <a href="/yungooses/new">new</a>
     <br>
     <hr>
 
-    <% mongooses.forEach(function(element, index){ %>
-        <a href="/mongooses/<%= element._id %>">Name: <%= element.name %></a>
+    <% yungooses.forEach(function(yungoose, index){ %>
+        <a href="/yungooses/<%= yungoose._id %>">Name: <%= yungoose.name %></a>
         <br/>
     <% }) %>
   </div>
